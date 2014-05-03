@@ -1,6 +1,6 @@
 {
   "name": "simlog",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple log messages for NodeJS.",
   "main": "index.js",
   "engines": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://vitorbritto@github.com/vitorbritto/simlog.git"
+    "url": "https://github.com/vitorbritto/simlog"
   },
   "keywords": [
     "log",
