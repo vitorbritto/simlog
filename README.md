@@ -1,6 +1,6 @@
 # Simlog
 
-Simple log messages.
+Simple log messages for NodeJS.
 
 ## Install
 
