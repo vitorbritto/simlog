@@ -1,0 +1,26 @@
+{
+  "name": "simlog",
+  "version": "0.1.0",
+  "description": "Simple log messages for NodeJS.",
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://vitorbritto@github.com/vitorbritto/simlog.git"
+  },
+  "keywords": [
+    "log",
+    "simlog"
+  ],
+  "author": "Vitor Britto <code@vitorbritto.com.br> (http://vitorbritto.com.br/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vitorbritto/simlog/issues"
+  },
+  "homepage": "https://github.com/vitorbritto/simlog",
+  "devDependencies": {
+    "colors": "^0.6.2"
+  }
+}

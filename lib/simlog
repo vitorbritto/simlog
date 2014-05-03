@@ -1,0 +1,21 @@
+'use strict';
+
+// Requires
+require('colors');
+
+// Exports
+exports.error = function(str) {
+    console.log('[ERROR] '.red + str);
+};
+
+exports.warning = function(str) {
+    console.log('[WARNING] '.yellow + str);
+};
+
+exports.info = function(str) {
+    console.log('[ERROR] '.cyan + str);
+};
+
+exports.success = function(str) {
+    console.log('[SUCCESS] '.green + str);
+};
