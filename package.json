@@ -20,7 +20,7 @@
     "url": "https://github.com/vitorbritto/simlog/issues"
   },
   "homepage": "https://github.com/vitorbritto/simlog",
-  "devDependencies": {
+  "dependencies": {
     "colors": "^0.6.2"
   }
 }
