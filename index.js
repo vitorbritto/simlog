@@ -7,4 +7,6 @@
  * Author: Vitor Britto <code@vitorbritto.com.br>
  */
 
+'use strict';
+
 module.exports = require('./lib/simlog');
