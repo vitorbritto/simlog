@@ -13,7 +13,7 @@ exports.warning = function(str) {
 };
 
 exports.info = function(str) {
-    console.log('[ERROR] '.cyan + str);
+    console.log('[INFO] '.cyan + str);
 };
 
 exports.success = function(str) {
