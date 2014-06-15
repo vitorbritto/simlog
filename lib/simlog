@@ -8,7 +8,7 @@ exports.error = function(str) {
     console.log('[ERROR] '.red + str);
 };
 
-exports.warning = function(str) {
+exports.warn = function(str) {
     console.log('[WARNING] '.yellow + str);
 };
 
@@ -16,6 +16,6 @@ exports.info = function(str) {
     console.log('[INFO] '.cyan + str);
 };
 
-exports.success = function(str) {
+exports.done = function(str) {
     console.log('[SUCCESS] '.green + str);
 };
