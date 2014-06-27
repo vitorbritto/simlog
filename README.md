@@ -11,7 +11,7 @@ Simple log messages for NodeJS.
 ```javascript
 var sl = require('simlog');
 
-sl.success('This is a success message!');
+sl.done('This is a success message!');
 sl.info('This is an info message!');
 sl.warn('This is a warning message!');
 sl.error('This is an error message!');

@@ -1,6 +1,6 @@
 {
   "name": "simlog",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Simple log messages for NodeJS.",
   "main": "index.js",
   "engines": {
