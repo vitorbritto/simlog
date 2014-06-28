@@ -4,7 +4,9 @@ Simple log messages for NodeJS.
 
 ## Install
 
-    npm install simlog --save-dev
+```bash
+$ npm install simlog --save-dev
+```
 
 ## Usage
 
