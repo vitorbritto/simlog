@@ -3,19 +3,52 @@
 // Requires
 require('colors');
 
+
+// Utilitary
+var isArray = function(obj) {
+ 	return toString.call(obj) === '[object Array]';
+};
+
+var flatten = function(arr) {
+	var result = [];
+
+	for (var i in arr) {
+		if (isArray(arr[i])) {
+			flatten(arr[i]).forEach(function (elem) {
+				result.push(elem);
+			});
+		} else {
+			result.push(arr[i]);
+		}
+  }
+
+  return result;
+};
+
+var toArray = Function.prototype.call.bind(Array.prototype.slice);
+
+// Actual Functionality
+var log = function(tag, type, color, str) {
+	if (arguments[4].length > 0) {
+		console[type].apply(this, flatten(['%s '[color] + str, tag, arguments[4]]));
+	} else {
+		console[type]('%s '[color] + str, tag);
+	}
+};
+
 // Exports
 exports.error = function(str) {
-    console.error('[ERROR] '.red + str);
+	log('[ERROR]', 'error', 'red', str, toArray(arguments).slice(1));
 };
 
 exports.warn = function(str) {
-    console.warn('[WARNING] '.yellow + str);
+	log('[WARN]', 'warn', 'yellow', str, toArray(arguments).slice(1));
 };
 
 exports.info = function(str) {
-    console.info('[INFO] '.cyan + str);
+	log('[INFO]', 'info', 'cyan', str, toArray(arguments).slice(1));
 };
 
 exports.done = function(str) {
-    console.log('[SUCCESS] '.green + str);
+	log('[SUCCESS]', 'log', 'green', str, toArray(arguments).slice(1));
 };
