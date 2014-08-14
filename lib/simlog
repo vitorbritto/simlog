@@ -5,15 +5,15 @@ require('colors');
 
 // Exports
 exports.error = function(str) {
-    console.log('[ERROR] '.red + str);
+    console.error('[ERROR] '.red + str);
 };
 
 exports.warn = function(str) {
-    console.log('[WARNING] '.yellow + str);
+    console.warn('[WARNING] '.yellow + str);
 };
 
 exports.info = function(str) {
-    console.log('[INFO] '.cyan + str);
+    console.info('[INFO] '.cyan + str);
 };
 
 exports.done = function(str) {
